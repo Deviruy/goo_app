@@ -22,9 +22,9 @@ class CityModel {
         description: json['description'],
         rating: json['rating'],
         reviews: json['reviews'],
-        assetPath: json['assetPath'],
+        assetPath: json['image'],
         price: json['price'],
-        facilites: json['facilites']);
+        facilites: FacilitiesModel.fromJsonToList(json['facilities']));
   }
 
   static List<CityModel> fromJsonToList(List<dynamic> jsonList) {
@@ -42,9 +42,7 @@ class FacilitiesModel {
 
   factory FacilitiesModel.fromJson(Map<String, dynamic> json) {
     return FacilitiesModel(
-        name: json['name'],
-        quantity: json['quantity'],
-        iconPath: json['iconPath']);
+        name: json['name'], quantity: json['quantity'], iconPath: json['icon']);
   }
 
   static List<FacilitiesModel> fromJsonToList(List<dynamic> jsonList) {
