@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Paris",
+    "description": "Paris is known as the world's premier romantic getaway destination. Imposing stone and wrought-iron buildings, cozy sidewalk cafés, and the winding banks of the Seine River make it unforgettable. Beyond the iconic Eiffel Tower, Paris charms visitors with its world-class cuisine, vibrant art scene, and endless opportunities to explore hidden streets and museums.",
+    "rating": 4.9,
+    "reviews": 743,
+    "image": "assets/images/paris.jpg",
+    "price": 199.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Rome",
+    "description": "Rome is a living museum, home to ancient ruins like the Colosseum and Roman Forum. The Eternal City combines history with modern life, offering charming piazzas, bustling cafés, and unforgettable Italian cuisine. Whether tossing a coin at the Trevi Fountain or marveling at the Vatican, Rome never ceases to amaze.",
+    "rating": 4.8,
+    "reviews": 680,
+    "image": "assets/images/rome.jpg",
+    "price": 179.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Barcelona",
+    "description": "Barcelona blends Gothic charm with modernist brilliance. The works of Antoni Gaudí, like the Sagrada Família and Park Güell, make the city a feast for the eyes. Visitors can enjoy Mediterranean beaches, tapas culture, and lively neighborhoods filled with art and music.",
+    "rating": 4.7,
+    "reviews": 592,
+    "image": "assets/images/barcelona.jpg",
+    "price": 165.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Amsterdam",
+    "description": "Amsterdam is famous for its picturesque canals, cycling culture, and unique architecture. The Dutch capital offers world-class museums like the Van Gogh Museum and Rijksmuseum, cozy cafés, and vibrant nightlife. A boat ride along the canals reveals the city’s charm from a new perspective.",
+    "rating": 4.6,
+    "reviews": 510,
+    "image": "assets/images/amsterdam.jpg",
+    "price": 155.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Prague",
+    "description": "Prague, the City of a Hundred Spires, captivates with its medieval architecture and fairy-tale streets. Visitors stroll across the Charles Bridge, explore Prague Castle, and admire the astronomical clock in Old Town Square. The city’s rich history and lively beer halls make it unforgettable.",
+    "rating": 4.7,
+    "reviews": 478,
+    "image": "assets/images/prague.jpg",
+    "price": 140.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Vienna",
+    "description": "Vienna enchants with imperial palaces, elegant coffee houses, and a world-class music scene. Known as the City of Music, it celebrates Mozart, Beethoven, and Strauss. Visitors also enjoy exploring Schönbrunn Palace, Belvedere Museum, and traditional Viennese cuisine like schnitzel and strudel.",
+    "rating": 4.8,
+    "reviews": 533,
+    "image": "assets/images/vienna.jpg",
+    "price": 160.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Berlin",
+    "description": "Berlin is a city of contrasts, combining modern creativity with rich history. From the Berlin Wall and Brandenburg Gate to cutting-edge art galleries and vibrant nightlife, it offers something for everyone. The city thrives on diversity and innovation.",
+    "rating": 4.6,
+    "reviews": 460,
+    "image": "assets/images/berlin.jpg",
+    "price": 150.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Budapest",
+    "description": "Budapest, divided by the Danube River into Buda and Pest, is famous for its thermal baths, historic architecture, and lively ruin pubs. Visitors marvel at the Parliament building, enjoy river cruises, and relax in iconic spas like Széchenyi.",
+    "rating": 4.7,
+    "reviews": 495,
+    "image": "assets/images/budapest.jpg",
+    "price": 135.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Lisbon",
+    "description": "Lisbon is a sun-soaked coastal city known for its colorful streets, historic tram rides, and breathtaking viewpoints. With delicious seafood, fado music, and a welcoming atmosphere, it blends tradition with modern energy.",
+    "rating": 4.6,
+    "reviews": 420,
+    "image": "assets/images/lisbon.jpg",
+    "price": 130.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
+    ]
+  },
+  {
+    "name": "Athens",
+    "description": "Athens is the cradle of Western civilization, blending ancient ruins with a bustling modern city. The Acropolis dominates the skyline, while lively neighborhoods offer delicious Greek cuisine and vibrant nightlife. A perfect mix of history and culture.",
+    "rating": 4.5,
+    "reviews": 399,
+    "image": "assets/images/athens.jpg",
+    "price": 125.0,
+    "facilities": [
+      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+    ]
+  }
+]
