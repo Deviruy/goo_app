@@ -61,6 +61,16 @@ flutter:
   assets:
     - assets/data/cities.json
     - assets/images/onboarding-background.jpg
+    - assets/images/amsterdam.jpg
+    - assets/images/athens.jpg
+    - assets/images/barcelona.jpg
+    - assets/images/berlin.jpg
+    - assets/images/budapest.jpg
+    - assets/images/lisbon.jpg
+    - assets/images/paris.jpg
+    - assets/images/prague.jpg
+    - assets/images/rome.jpg
+    - assets/images/vienna.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
