@@ -84,102 +84,115 @@ class _HomePageState extends State<HomePage> {
                           scrollDirection: Axis.horizontal,
                           itemCount: popularCities.length,
                           itemBuilder: (context, index) {
+                            final popularCitie = popularCities[index];
                             return Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 15),
-                              child: Container(
-                                margin: EdgeInsets.symmetric(vertical: 16),
-                                width: 220,
-                                height: 240,
-                                decoration: BoxDecoration(
-                                    color: Colors.grey[300],
-                                    borderRadius: BorderRadius.circular(25),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color:
-                                            Colors.black.withValues(alpha: 0.3),
-                                        blurRadius: 16,
-                                        offset: const Offset(-2, 2),
+                              child: Hero(
+                                tag: popularCitie.assetPath,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.pushNamed(
+                                        context, '/city-details',
+                                        arguments: popularCitie);
+                                  },
+                                  child: Container(
+                                    margin: EdgeInsets.symmetric(vertical: 16),
+                                    width: 220,
+                                    height: 240,
+                                    decoration: BoxDecoration(
+                                        color: Colors.grey[300],
+                                        borderRadius: BorderRadius.circular(25),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.black
+                                                .withValues(alpha: 0.3),
+                                            blurRadius: 16,
+                                            offset: const Offset(-2, 2),
+                                          ),
+                                        ]),
+                                    child: Stack(children: [
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(25),
+                                        child: Image.asset(
+                                          height: double.infinity,
+                                          width: double.infinity,
+                                          popularCitie.assetPath,
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
-                                    ]),
-                                child: Stack(children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(25),
-                                    child: Image.asset(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      popularCities[index].assetPath,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  Align(
-                                    alignment: Alignment.bottomLeft,
-                                    child: Padding(
-                                      padding:
-                                          EdgeInsets.only(left: 16, bottom: 56),
-                                      child: Container(
-                                        height: 30,
-                                        decoration: BoxDecoration(
-                                            color: Colors.grey
-                                                .withValues(alpha: .7),
-                                            borderRadius:
-                                                BorderRadius.circular(25)),
+                                      Align(
+                                        alignment: Alignment.bottomLeft,
                                         child: Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              vertical: 4, horizontal: 18),
-                                          child: Text(
-                                            popularCities[index].name,
-                                            style: TextStyle(
-                                              fontSize: 14,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.w500,
+                                          padding: EdgeInsets.only(
+                                              left: 16, bottom: 56),
+                                          child: Container(
+                                            height: 30,
+                                            decoration: BoxDecoration(
+                                                color: Colors.grey
+                                                    .withValues(alpha: .7),
+                                                borderRadius:
+                                                    BorderRadius.circular(25)),
+                                            child: Padding(
+                                              padding: EdgeInsets.symmetric(
+                                                  vertical: 4, horizontal: 18),
+                                              child: Text(
+                                                popularCitie.name,
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                              ),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                  ),
-                                  Align(
-                                    alignment: Alignment.bottomLeft,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(16),
-                                      child: Container(
-                                        height: 30,
-                                        decoration: BoxDecoration(
-                                            color: Colors.grey
-                                                .withValues(alpha: .7),
-                                            borderRadius:
-                                                BorderRadius.circular(25)),
+                                      Align(
+                                        alignment: Alignment.bottomLeft,
                                         child: Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              vertical: 4, horizontal: 12),
-                                          child: Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: 18,
-                                                ),
-                                                const SizedBox(
-                                                  width: 6,
-                                                ),
-                                                Text(
-                                                  popularCities[index]
-                                                      .rating
-                                                      .toString(),
-                                                  style: TextStyle(
-                                                    fontSize: 12,
-                                                    color: Colors.white,
-                                                    fontWeight: FontWeight.w500,
-                                                  ),
-                                                ),
-                                              ]),
+                                          padding: EdgeInsets.all(16),
+                                          child: Container(
+                                            height: 30,
+                                            decoration: BoxDecoration(
+                                                color: Colors.grey
+                                                    .withValues(alpha: .7),
+                                                borderRadius:
+                                                    BorderRadius.circular(25)),
+                                            child: Padding(
+                                              padding: EdgeInsets.symmetric(
+                                                  vertical: 4, horizontal: 12),
+                                              child: Row(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  children: [
+                                                    Icon(
+                                                      Icons.star,
+                                                      color: Colors.yellow,
+                                                      size: 18,
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 6,
+                                                    ),
+                                                    Text(
+                                                      popularCities[index]
+                                                          .rating
+                                                          .toString(),
+                                                      style: TextStyle(
+                                                        fontSize: 12,
+                                                        color: Colors.white,
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                      ),
+                                                    ),
+                                                  ]),
+                                            ),
+                                          ),
                                         ),
                                       ),
-                                    ),
+                                    ]),
                                   ),
-                                ]),
+                                ),
                               ),
                             );
                           },
