@@ -71,6 +71,10 @@ flutter:
     - assets/images/prague.jpg
     - assets/images/rome.jpg
     - assets/images/vienna.jpg
+    - assets/icons/dinner.png
+    - assets/icons/heater.png
+    - assets/icons/pool.png
+    - assets/icons/tub.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

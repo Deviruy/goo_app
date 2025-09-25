@@ -37,7 +37,7 @@
     "facilities": [
       { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
       { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Tub", "quantity": 2, "icon": "assets/icons/tub.png" },
       { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
     ]
   },
@@ -51,8 +51,7 @@
     "facilities": [
       { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
       { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
-      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" }
     ]
   },
   {
@@ -63,9 +62,8 @@
     "image": "assets/images/prague.jpg",
     "price": 140.0,
     "facilities": [
-      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
       { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
       { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
     ]
   },
@@ -91,10 +89,8 @@
     "image": "assets/images/berlin.jpg",
     "price": 150.0,
     "facilities": [
-      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
-      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
-      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" }
     ]
   },
   {
@@ -105,9 +101,8 @@
     "image": "assets/images/budapest.jpg",
     "price": 135.0,
     "facilities": [
-      { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
-      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 2, "icon": "assets/icons/tub.png" },
       { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
     ]
   },
@@ -120,8 +115,8 @@
     "price": 130.0,
     "facilities": [
       { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
-      { "name": "Dinner", "quantity": 1, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": null, "icon": "assets/icons/tub.png" },
+      { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
+      { "name": "Tub", "quantity": 2, "icon": "assets/icons/tub.png" },
       { "name": "Pool", "quantity": 1, "icon": "assets/icons/pool.png" }
     ]
   },
@@ -135,8 +130,7 @@
     "facilities": [
       { "name": "Heater", "quantity": 1, "icon": "assets/icons/heater.png" },
       { "name": "Dinner", "quantity": null, "icon": "assets/icons/dinner.png" },
-      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" },
-      { "name": "Pool", "quantity": null, "icon": "assets/icons/pool.png" }
+      { "name": "Tub", "quantity": 1, "icon": "assets/icons/tub.png" }
     ]
   }
 ]
