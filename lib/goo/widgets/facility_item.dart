@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goo_app/goo/models/city_model.dart';
+import '../models/models.dart';
 
 class FacilityItem extends StatelessWidget {
   final FacilitiesModel facilityItem;

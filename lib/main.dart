@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:goo_app/goo/controller/order_provider.dart';
 import 'package:goo_app/goo/models/city_model.dart';
-import 'package:goo_app/goo/pages/city_details_page.dart';
-
+import 'package:provider/provider.dart';
 import 'goo/pages/pages.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+      ChangeNotifierProvider(create: (_) => OrderProvider(), child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

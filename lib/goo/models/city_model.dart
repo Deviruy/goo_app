@@ -1,3 +1,5 @@
+import 'facilities_model.dart';
+
 class CityModel {
   final String name;
   final String description;
@@ -29,23 +31,5 @@ class CityModel {
 
   static List<CityModel> fromJsonToList(List<dynamic> jsonList) {
     return jsonList.map((json) => CityModel.fromJson(json)).toList();
-  }
-}
-
-class FacilitiesModel {
-  final String name;
-  final int? quantity;
-  final String iconPath;
-
-  FacilitiesModel(
-      {required this.name, required this.quantity, required this.iconPath});
-
-  factory FacilitiesModel.fromJson(Map<String, dynamic> json) {
-    return FacilitiesModel(
-        name: json['name'], quantity: json['quantity'], iconPath: json['icon']);
-  }
-
-  static List<FacilitiesModel> fromJsonToList(List<dynamic> jsonList) {
-    return jsonList.map((json) => FacilitiesModel.fromJson(json)).toList();
   }
 }
