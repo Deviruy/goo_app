@@ -202,13 +202,12 @@ class _CityDetailsPageState extends State<CityDetailsPage> {
                     context.read<OrderProvider>().addOrder(widget.city);
                     Navigator.pop(context);
                     Flushbar(
-                      message: "Your trip has been booked!",
+                      message: "✈️ Your trip has been booked!",
                       duration: const Duration(seconds: 2),
                       backgroundColor: Colors.green.shade400,
                       margin: const EdgeInsets.all(8),
                       borderRadius: BorderRadius.circular(8),
                       flushbarPosition: FlushbarPosition.TOP,
-                      icon: Icon(Icons.confirmation_number),
                     ).show(context);
                   },
                   child: Container(
