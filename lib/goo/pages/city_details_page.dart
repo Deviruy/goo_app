@@ -238,6 +238,9 @@ class _CityDetailsPageState extends State<CityDetailsPage> {
                   ),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 16,
             )
           ]),
         ),

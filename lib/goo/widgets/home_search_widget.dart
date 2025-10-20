@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class HomeSearchWidget extends StatelessWidget {
+  final ValueChanged<String> onChanged;
   const HomeSearchWidget({
     super.key,
+    required this.onChanged,
   });
 
   @override
@@ -26,8 +28,9 @@ class HomeSearchWidget extends StatelessWidget {
               color: Colors.grey,
             ),
             const SizedBox(width: 6),
-            const Expanded(
+            Expanded(
               child: TextField(
+                onChanged: onChanged,
                 textAlign: TextAlign.left,
                 decoration: InputDecoration(
                   hintText: 'Find things to do',
