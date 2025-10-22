@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/goo_app_logo.png" alt="Logo aplicativo" width="300"/>
+  <img src="assets/images/app_logo.png" alt="Logo aplicativo" width="300"/>
 </p>
 
 <p align="center">
