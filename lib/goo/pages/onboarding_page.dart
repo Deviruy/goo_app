@@ -70,7 +70,7 @@ class OnboardingPage extends StatelessWidget {
                       CustomButton(
                         buttonTittle: 'Explore',
                         onTap: () {
-                          Navigator.pushReplacementNamed(context, '/home');
+                          Navigator.pushReplacementNamed(context, '/main');
                         },
                       )
                     ],

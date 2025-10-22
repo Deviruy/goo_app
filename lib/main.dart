@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             return MaterialPageRoute(builder: (_) => const OnboardingPage());
-          case '/home':
-            return MaterialPageRoute(builder: (_) => const HomePage());
+          case '/main':
+            return MaterialPageRoute(builder: (_) => const MainPage());
           case '/city-details':
             final args = settings.arguments as CityModel;
             return MaterialPageRoute(

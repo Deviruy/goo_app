@@ -24,35 +24,36 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: FutureBuilder<List<CityModel>>(
-          future: cities,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
+      body: FutureBuilder<List<CityModel>>(
+        future: cities,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
 
-            if (snapshot.hasError) {
-              return Center(child: Text('Erro: ${snapshot.error}'));
-            }
+          if (snapshot.hasError) {
+            return Center(child: Text('Erro: ${snapshot.error}'));
+          }
 
-            if (!snapshot.hasData || snapshot.data!.isEmpty) {
-              return const Center(child: Text('Nenhuma cidade encontrada'));
-            }
+          if (!snapshot.hasData || snapshot.data!.isEmpty) {
+            return const Center(child: Text('No cities found.'));
+          }
 
-            final cities = snapshot.data!;
+          final cities = snapshot.data!;
 
-            final filteredCities = cities.where((city) {
-              final query = searchQuery.toLowerCase();
-              return city.name.toLowerCase().contains(query);
-            }).toList();
+          final filteredCities = cities.where((city) {
+            final query = searchQuery.toLowerCase();
+            return city.name.toLowerCase().contains(query);
+          }).toList();
 
-            final popularCities =
-                filteredCities.where((c) => c.rating > 4.7).toList();
-            final recommendedCities =
-                filteredCities.where((c) => c.rating <= 4.7).toList();
+          final popularCities =
+              filteredCities.where((c) => c.rating > 4.7).toList();
+          final recommendedCities =
+              filteredCities.where((c) => c.rating <= 4.7).toList();
 
-            return SingleChildScrollView(
+          return SingleChildScrollView(
+            child: Padding(
+              padding: EdgeInsets.only(top: 23, bottom: 60),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -106,23 +107,24 @@ class _HomePageState extends State<HomePage> {
                     ),
 
                   // Filtered Cities founded
-                  GridView.count(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 0,
-                    mainAxisSpacing: 0,
-                    childAspectRatio: .75,
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    children: List.generate(filteredCities.length, (index) {
-                      final searchedCity = filteredCities[index];
-                      return CityShowcase(city: searchedCity);
-                    }),
-                  ),
+                  if (searchQuery.isNotEmpty)
+                    GridView.count(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 0,
+                      mainAxisSpacing: 0,
+                      childAspectRatio: .75,
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      children: List.generate(filteredCities.length, (index) {
+                        final searchedCity = filteredCities[index];
+                        return CityShowcase(city: searchedCity);
+                      }),
+                    ),
                 ],
               ),
-            );
-          },
-        ),
+            ),
+          );
+        },
       ),
     );
   }

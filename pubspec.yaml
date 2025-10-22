@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   provider: ^6.1.5+1
   another_flushbar: ^1.12.32
+  flutter_slidable: ^4.0.3
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
     - assets/images/prague.jpg
     - assets/images/rome.jpg
     - assets/images/vienna.jpg
+    - assets/images/no_orders.png
     - assets/icons/dinner.png
     - assets/icons/heater.png
     - assets/icons/pool.png
