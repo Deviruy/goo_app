@@ -84,14 +84,6 @@ class _CityDetailsPageState extends State<CityDetailsPage> {
                       fontWeight: FontWeight.w500,
                     ),
                   ),
-                  Text(
-                    'Show map',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
                 ]),
             Row(
               children: [
