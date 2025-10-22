@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/goo_app_logo" alt="Logo aplicativo" width="200"/>
+  <img src="assets/images/goo_app_logo.png" alt="Logo aplicativo" width="300"/>
 </p>
 
 <p align="center">
@@ -18,11 +18,6 @@ O app utiliza Provider para gerenciamento de estado e simula um sistema de reser
 - Visualizar e gerenciar todas as reservas realizadas.
 - Experiência fluida com animações suaves e responsivas.
 
-## 📷 Screenshots
-<p align="center">
-  <img src="assets/images/mockup" alt="App mockup" width="200"/>
-</p>
-
 ## 🤝 Contato
 
 <p align="center">
@@ -32,4 +27,9 @@ O app utiliza Provider para gerenciamento de estado e simula um sistema de reser
   <a href="mailto:yuri_trindade2016@hotmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email" />
   </a>
+</p>
+
+## 📷 Screenshots
+<p align="center">
+  <img src="assets/images/mockup.png" alt="App mockup" width="400"/>
 </p>
