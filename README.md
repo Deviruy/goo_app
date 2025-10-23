@@ -29,7 +29,7 @@ O app utiliza Provider para gerenciamento de estado e simula um sistema de reser
   </a>
 </p>
 
-## 📷 Screenshots
 <p align="center">
-  <img src="assets/images/mockup.png" alt="App mockup" width="400"/>
+  <img src="assets/images/screenshots1.png" alt="Tela 1" width="300"/>
+  <img src="assets/images/screenshots2.png" alt="Tela 2" width="300"/>
 </p>
